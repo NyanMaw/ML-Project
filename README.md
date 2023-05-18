@@ -5,9 +5,9 @@ This is done on Windows.
 Ensure Docker-Desktop is installed.
 This is meant to be run locally on your computer.
 
-#To start frontend:
+# To start frontend:
 Go to the frontend directory in your terminal. Type "npm start" and hit enter. It should run on localhost at port 3000.
-#To start backend:
+# To start backend:
 For first timers, go to the backend directory in your terminal. Type "docker-compose build" and hit enter. This will take a while, but only needs to be done once.
 Go to the backend directory in your terminal. Type "docker-compose up" and hit enter. It should run on localhost at port 8000.
 
