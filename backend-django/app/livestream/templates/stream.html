@@ -1,0 +1,20 @@
+<!-- stream.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Stream</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <img id="stream-image" src="" alt="Live Stream">
+    <script>
+    const streamSocket = new WebSocket('ws://localhost:8000/ws/stream/');
+
+    streamSocket.onmessage = function (e) {
+        const data = JSON.parse(e.data);
+        const image = document.getElementById('stream-image');
+        image.src = 'data:image/jpeg;base64,' + data.image;
+    };
+    </script>
+</body>
+</html>

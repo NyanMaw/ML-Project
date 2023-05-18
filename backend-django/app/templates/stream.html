@@ -1,0 +1,20 @@
+<!-- stream.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Stream</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <video id="stream-video" autoplay controls></video>
+    <script>
+    const streamSocket = new WebSocket('ws://localhost:8000/ws/stream/');
+
+    streamSocket.onmessage = function (e) {
+        const data = JSON.parse(e.data);
+        const video = document.getElementById('stream-video');
+        video.src = 'data:video/mp4;base64,' + data.video;
+    };
+    </script>
+</body>
+</html>

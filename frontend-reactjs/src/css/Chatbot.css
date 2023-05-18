@@ -1,0 +1,109 @@
+/* Chatbot container */
+.chatbot-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .videostream {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .chat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .chatbot-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .chatbot-container {
+    width: 600px; /* Match this with your video width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Chat messages */
+  .chat-messages {
+    height: 300px;
+    overflow-y: scroll;
+  }
+
+  /* Individual chat message */
+  .chat-message {
+    margin-bottom: 10px;
+  }
+
+  /* User message */
+  .chat-message.user-message {
+    text-align: right;
+  }
+
+  /* Bot message */
+  .chat-message.bot-message {
+    text-align: left;
+  }
+
+  /* Message bubble */
+  .message-bubble {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+ /* User message bubble */
+.message-bubble.user-bubble {
+  background-color: #007bff;
+  color: #fff;
+  text-align: right;
+}
+
+/* Bot message bubble */
+.message-bubble.bot-bubble {
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: left;
+}
+
+  /* User input form */
+  .user-input-form {
+    margin-top: 10px;
+  }
+
+  /* User input field */
+  .user-input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Send button */
+  .send-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Send button hover effect */
+  .send-button:hover {
+    background-color: #0056b3;
+  }
