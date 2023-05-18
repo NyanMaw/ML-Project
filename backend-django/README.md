@@ -28,4 +28,5 @@ The following steps only needs to be done once, or upon every update to the proj
 ### Using your OpenAI API key
 1. Find the file, openai_api_key.txt
 2. Type in your own API key.
+3. DO NOT share this key. Ensure this file is under your .gitignore file.
 
