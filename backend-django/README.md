@@ -25,7 +25,7 @@ The following steps only needs to be done once, or upon every update to the proj
         - *runserver*: Run the Django backend application on [127.0.0.1:8000](127.0.0.1:8000).
 2. Open google-chrome and proceed to [127.0.0.1:8000](127.0.0.1:8000).
 
-### Getting your OpenAI API key
+### Using your OpenAI API key
 1. Find the file, openai_api_key.txt
 2. Type in your own API key.
 
